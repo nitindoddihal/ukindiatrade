@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK India Trade Limited — Your bridge between two markets</title>
+<meta name="description" content="Market entry consulting, trade facilitation and local representation for Indian companies entering the UK and UK companies entering India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E4D45;
+  --navy-deep:#093630;
+  --marigold:#B06A3B;
+  --marigold-soft:#C98753;
+  --green:#22303C;
+  --paper:#FFFFFF;
+  --mist:#F5F1E8;
+  --ink:#26302E;
+  --ink-soft:#5C6664;
+  --line:#DDD8CC;
+  --radius:10px;
+  --maxw:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Public Sans',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+  font-size:16.5px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Marcellus',serif;font-weight:400;line-height:1.15;color:var(--navy)}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:2px;border-radius:4px}
+
+/* ---------- route line motif ---------- */
+.route{
+  display:flex;align-items:center;gap:14px;
+  font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.12em;
+}
+.route .dash{
+  flex:1;height:0;border-top:2px dashed currentColor;opacity:.45;position:relative;
+}
+.route .dash::after{
+  content:'';position:absolute;right:-1px;top:-5px;width:8px;height:8px;
+  border-radius:50%;background:currentColor;
+}
+.route .dash::before{
+  content:'';position:absolute;left:-1px;top:-5px;width:8px;height:8px;
+  border-radius:50%;background:currentColor;
+}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand-name{font-family:'Marcellus',serif;font-size:1.15rem;color:var(--navy)}
+.brand-tag{font-family:'IBM Plex Mono',monospace;font-size:.65rem;letter-spacing:.18em;color:var(--marigold);text-transform:uppercase}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--ink-soft)}
+nav a:hover{color:var(--navy)}
+.cta-btn{
+  display:inline-block;background:var(--navy);color:#fff;text-decoration:none;
+  padding:11px 22px;border-radius:var(--radius);font-weight:600;font-size:.95rem;
+  transition:background .2s ease, transform .2s ease;
+}
+.cta-btn:hover{background:var(--navy-deep);transform:translateY(-1px)}
+.cta-btn.gold{background:var(--marigold);color:#FFF4EA}
+.cta-btn.gold:hover{background:var(--marigold-soft)}
+@media(max-width:760px){nav ul{display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;padding:84px 0 72px;position:relative;overflow:hidden;
+}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5.4vw,3.4rem);max-width:17ch;margin:26px 0 18px}
+.hero h1 em{font-style:normal;color:var(--marigold)}
+.hero p.lede{font-size:1.12rem;color:#CFE0DB;max-width:52ch;margin-bottom:34px}
+.hero .route{color:var(--marigold);max-width:420px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero .ghost{
+  display:inline-block;padding:11px 22px;border:1px solid rgba(255,255,255,.35);
+  border-radius:var(--radius);color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;
+  transition:border-color .2s ease;
+}
+.hero .ghost:hover{border-color:var(--marigold)}
+.fta-strip{
+  margin-top:52px;padding:16px 20px;border:1px solid rgba(176,106,59,.45);
+  border-radius:var(--radius);background:rgba(176,106,59,.12);
+  font-size:.92rem;color:#ECE7DA;max-width:640px;
+}
+.fta-strip strong{color:var(--marigold)}
+
+/* ---------- two directions ---------- */
+.directions{padding:76px 0;background:var(--paper)}
+.section-head{margin-bottom:44px;max-width:640px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--marigold);display:block;margin-bottom:12px}
+.section-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
+.dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:760px){.dir-grid{grid-template-columns:1fr}}
+.dir-card{
+  border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;
+  background:var(--paper);transition:box-shadow .25s ease, transform .25s ease;
+}
+.dir-card:hover{box-shadow:0 14px 34px rgba(27,42,74,.1);transform:translateY(-3px)}
+.dir-card .route{margin-bottom:20px}
+.dir-card:nth-child(1) .route{color:var(--green)}
+.dir-card:nth-child(2) .route{color:var(--navy)}
+.dir-card h3{font-size:1.35rem;margin-bottom:12px}
+.dir-card p{color:var(--ink-soft);font-size:.98rem;margin-bottom:18px}
+.dir-card ul{list-style:none}
+.dir-card li{padding:8px 0 8px 26px;position:relative;font-size:.95rem;border-top:1px solid var(--mist)}
+.dir-card li::before{content:'—';position:absolute;left:0;color:var(--marigold);font-weight:700}
+
+/* ---------- services ---------- */
+.services{padding:76px 0;background:var(--mist)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:860px){.svc-grid{grid-template-columns:1fr}}
+.svc{
+  background:var(--paper);border-radius:var(--radius);padding:30px 26px;
+  border-top:4px solid var(--marigold);
+}
+.svc:nth-child(2){border-top-color:var(--navy)}
+.svc:nth-child(3){border-top-color:var(--green)}
+.svc h3{font-size:1.18rem;margin-bottom:10px}
+.svc p{color:var(--ink-soft);font-size:.95rem}
+
+/* ---------- process ---------- */
+.process{padding:76px 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+@media(max-width:860px){.steps{grid-template-columns:1fr;gap:8px}}
+.step{padding:26px 22px 26px 0}
+.step .mono{color:var(--marigold);font-size:.75rem;letter-spacing:.15em;display:block;margin-bottom:10px}
+.step h3{font-size:1.05rem;margin-bottom:8px}
+.step p{font-size:.92rem;color:var(--ink-soft)}
+
+/* ---------- about ---------- */
+.about{padding:76px 0;background:var(--navy);color:#fff}
+.about .eyebrow{color:var(--marigold)}
+.about h2{color:#fff;font-size:clamp(1.6rem,3.2vw,2.2rem);max-width:22ch;margin-bottom:18px}
+.about p{color:#CFE0DB;max-width:58ch;margin-bottom:14px}
+.about .route{color:var(--marigold);max-width:360px;margin-top:30px}
+
+/* ---------- contact ---------- */
+.contact{padding:80px 0;text-align:center}
+.contact h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:14px}
+.contact p{color:var(--ink-soft);max-width:46ch;margin:0 auto 30px}
+.contact .mono{display:block;margin-top:26px;color:var(--ink-soft);font-size:.85rem}
+.contact a.mail{color:var(--navy);font-weight:600;text-decoration:none;border-bottom:2px solid var(--marigold)}
+
+/* ---------- enquiry form ---------- */
+.enq-form{max-width:640px;margin:0 auto;text-align:left}
+.enq-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.enq-row{grid-template-columns:1fr}}
+.enq-field{margin-bottom:16px;display:flex;flex-direction:column}
+.enq-field label{font-size:.85rem;font-weight:600;color:var(--navy);margin-bottom:6px}
+.enq-field input,.enq-field select,.enq-field textarea{
+  font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--paper);color:var(--ink);width:100%;
+}
+.enq-field input:focus,.enq-field select:focus,.enq-field textarea:focus{
+  outline:none;border-color:var(--marigold);box-shadow:0 0 0 3px rgba(176,106,59,.18);
+}
+.enq-field input.err,.enq-field textarea.err{border-color:#B0483B}
+.enq-form .cta-btn{border:0;cursor:pointer;font:inherit;font-weight:600;width:100%}
+.enq-note{font-size:.82rem;color:var(--ink-soft);margin-top:12px;text-align:center}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:30px 0;font-size:.85rem;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ---------- motion ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .dir-card,.cta-btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="brand-name">UK India Trade</span>
+      <span class="brand-tag">LTD</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#directions">Who we help</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <a class="cta-btn" href="#contact">Free market snapshot</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="route" aria-hidden="true"><span>LON</span><span class="dash"></span><span>MUM</span></div>
+    <h1>Two markets. <em>One trusted bridge.</em></h1>
+    <p class="lede">We help Indian companies enter the UK market and UK companies enter India — with market entry strategy, trade facilitation and on-the-ground representation on both sides.</p>
+    <div class="hero-ctas">
+      <a class="cta-btn gold" href="#contact">Get your free market snapshot</a>
+      <a class="ghost" href="#services">See what we do</a>
+    </div>
+    <div class="fta-strip reveal">
+      <strong>The window is open.</strong> The India–UK Free Trade Agreement is cutting tariffs across textiles, automotive, pharma, food &amp; drink and more. First movers set the relationships that last.
+    </div>
+  </div>
+</section>
+
+<section class="directions" id="directions">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Who we help</span>
+      <h2>Trade runs in both directions. So do we.</h2>
+    </div>
+    <div class="dir-grid">
+      <article class="dir-card reveal">
+        <div class="route" aria-hidden="true"><span>IND</span><span class="dash"></span><span>UK</span></div>
+        <h3>Indian companies entering the UK</h3>
+        <p>You have the product and the ambition. We provide the local knowledge, contacts and compliance confidence.</p>
+        <ul>
+          <li>UK market research &amp; entry strategy</li>
+          <li>Buyer and distributor matchmaking</li>
+          <li>Company setup, VAT &amp; UKCA guidance</li>
+          <li>UK representative office services</li>
+        </ul>
+      </article>
+      <article class="dir-card reveal">
+        <div class="route" aria-hidden="true"><span>UK</span><span class="dash"></span><span>IND</span></div>
+        <h3>UK companies entering India</h3>
+        <p>India is a market of scale — and of nuance. We help you find the right partners and avoid the expensive lessons.</p>
+        <ul>
+          <li>India feasibility &amp; market studies</li>
+          <li>Supplier sourcing &amp; verification</li>
+          <li>FDI, GST &amp; import licensing guidance</li>
+          <li>Introductions to vetted local partners</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>Three ways we move your business across the bridge</h2>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <h3>Market entry consulting</h3>
+        <p>Feasibility studies, entry strategy and regulatory roadmaps — so you enter the new market with a plan, not a guess.</p>
+      </article>
+      <article class="svc reveal">
+        <h3>Trade facilitation</h3>
+        <p>Buyer–supplier matchmaking, trade delegations, exhibition representation and sourcing — connections that convert.</p>
+      </article>
+      <article class="svc reveal">
+        <h3>Local representation</h3>
+        <p>We act as your office in the other market: documentation, logistics coordination and introductions to banks, lawyers and freight partners.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>From first call to first shipment</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="mono">STEP 01</span>
+        <h3>Send an enquiry</h3>
+        <p>Tell us about your product, your target market and what you want to achieve. Two minutes, no commitment.</p>
+      </div>
+      <div class="step reveal">
+        <span class="mono">STEP 02</span>
+        <h3>Opportunity snapshot</h3>
+        <p>We reply within two working days with an honest first read: demand, competition, tariffs under the FTA, and the route we'd explore.</p>
+      </div>
+      <div class="step reveal">
+        <span class="mono">STEP 03</span>
+        <h3>Entry plan</h3>
+        <p>A fixed-fee engagement covering strategy, compliance and the introductions that matter.</p>
+      </div>
+      <div class="step reveal">
+        <span class="mono">STEP 04</span>
+        <h3>On-the-ground support</h3>
+        <p>Ongoing representation as you land: meetings, paperwork, partners and follow-through.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <span class="eyebrow">About us</span>
+    <h2>Built for the biggest India–UK trade moment in a generation</h2>
+    <p>UK India Trade Limited is a UK-registered trade consultancy created for one purpose: helping businesses on both sides turn the new Free Trade Agreement into real revenue.</p>
+    <p>This business runs on trust and introductions. Our network of vetted lawyers, accountants and freight partners in both countries means you're never navigating alone.</p>
+    <div class="route" aria-hidden="true"><span>EST. 2026</span><span class="dash"></span><span>UK ⇄ IN</span></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Free market snapshot</span>
+    <h2>Find out if your opportunity is real — before you spend a rupee or a pound</h2>
+    <p>Tell us about your product in two minutes. Within two working days you'll get an honest, no-obligation read on demand, competition and your FTA tariff advantage — by email, no sales call.</p>
+    <form id="enquiry" class="enq-form" novalidate>
+      <div class="enq-row">
+        <div class="enq-field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="enq-field">
+          <label for="f-company">Company</label>
+          <input id="f-company" name="company" type="text" autocomplete="organization" required>
+        </div>
+      </div>
+      <div class="enq-row">
+        <div class="enq-field">
+          <label for="f-email">Your email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="enq-field">
+          <label for="f-direction">Direction of interest</label>
+          <select id="f-direction" name="direction">
+            <option>India → UK (entering the UK market)</option>
+            <option>UK → India (entering the Indian market)</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="enq-field">
+        <label for="f-message">Tell us about your product and goals</label>
+        <textarea id="f-message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="cta-btn gold">Get my free snapshot</button>
+      <p class="enq-note">Opens a ready-made email in your mail app — just press send. No spam, no obligation, reply within 2 working days.</p>
+    </form>
+    <span class="mono">UK INDIA TRADE LIMITED · REGISTERED IN ENGLAND &amp; WALES · COMPANY NO. 17342484</span>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 UK India Trade Limited</span>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+document.getElementById('enquiry').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  let valid = true;
+  this.querySelectorAll('[required]').forEach(f=>{
+    const bad = !f.value.trim() || (f.type==='email' && !/^\S+@\S+\.\S+$/.test(f.value));
+    f.classList.toggle('err', bad);
+    if(bad) valid = false;
+  });
+  if(!valid) return;
+  const v = id => document.getElementById(id).value.trim();
+  const subject = 'Enquiry from ' + v('f-company') + ' — ' + v('f-direction');
+  const body =
+    'Name: ' + v('f-name') + '\n' +
+    'Company: ' + v('f-company') + '\n' +
+    'Email: ' + v('f-email') + '\n' +
+    'Direction: ' + v('f-direction') + '\n\n' +
+    v('f-message');
+  window.location.href = 'mailto:hello@ukindiatrade.co.uk'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
