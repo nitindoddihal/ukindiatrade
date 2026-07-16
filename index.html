@@ -20,7 +20,7 @@
   "email": "hello@ukindiatrade.co.uk",
   "description": "Market entry consulting, trade facilitation and local representation for Indian companies entering the UK and UK companies entering India.",
   "areaServed": ["GB", "IN"],
-  "knowsAbout": ["UK India Free Trade Agreement", "market entry strategy", "export consulting", "trade facilitation"],
+  "knowsAbout": ["UK India Free Trade Agreement", "market entry strategy", "export consulting", "trade facilitation", "fractional executive leadership", "build operate transfer"],
   "identifier": {
     "@type": "PropertyValue",
     "name": "Companies House Number",
@@ -156,16 +156,39 @@ nav a:hover{color:var(--navy)}
 
 /* ---------- services ---------- */
 .services{padding:76px 0;background:var(--mist)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:24px}
 @media(max-width:860px){.svc-grid{grid-template-columns:1fr}}
 .svc{
   background:var(--paper);border-radius:var(--radius);padding:30px 26px;
   border-top:4px solid var(--marigold);
+  display:flex;flex-direction:column;
+  transition:box-shadow .25s ease, transform .25s ease;
 }
+.svc:hover{box-shadow:0 14px 34px rgba(14,77,69,.12);transform:translateY(-3px)}
 .svc:nth-child(2){border-top-color:var(--navy)}
 .svc:nth-child(3){border-top-color:var(--green)}
+.svc .tier{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--marigold);margin-bottom:12px}
 .svc h3{font-size:1.18rem;margin-bottom:10px}
 .svc p{color:var(--ink-soft);font-size:.95rem}
+/* flagship tier */
+.svc-flagship{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+  border-radius:var(--radius);padding:40px 36px;color:#fff;
+  border:1px solid rgba(201,135,83,.5);position:relative;overflow:hidden;
+}
+.svc-flagship .tier{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--marigold-soft);margin-bottom:14px;display:block}
+.svc-flagship h3{color:#fff;font-size:1.5rem;margin-bottom:12px;max-width:26ch}
+.svc-flagship p{color:#CFE0DB;font-size:.98rem;max-width:64ch;margin-bottom:26px}
+.bot-steps{display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.bot-step{display:flex;align-items:center}
+.bot-step .lbl{
+  font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.14em;
+  color:var(--marigold-soft);border:1px solid rgba(201,135,83,.55);
+  padding:9px 18px;border-radius:999px;white-space:nowrap;
+}
+.bot-step .dash{width:56px;border-top:2px dashed rgba(201,135,83,.55);margin:0 6px}
+@media(max-width:600px){.bot-step .dash{width:22px}}
+.svc-flagship .flag-note{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;color:#7FA79E;margin-top:22px;margin-bottom:0}
 
 /* ---------- process ---------- */
 .process{padding:76px 0}
@@ -301,22 +324,36 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Services</span>
-      <h2>Three ways we move your business across the bridge</h2>
+      <h2>Engage as lightly — or as deeply — as your ambition demands</h2>
     </div>
     <div class="svc-grid">
       <article class="svc reveal">
+        <span class="tier">TIER 01 · ADVISE</span>
         <h3>Market entry consulting</h3>
         <p>Feasibility studies, entry strategy and regulatory roadmaps — so you enter the new market with a plan, not a guess.</p>
       </article>
       <article class="svc reveal">
+        <span class="tier">TIER 02 · CONNECT</span>
         <h3>Trade facilitation</h3>
         <p>Buyer–supplier matchmaking, trade delegations, exhibition representation and sourcing — connections that convert.</p>
       </article>
       <article class="svc reveal">
+        <span class="tier">TIER 03 · REPRESENT</span>
         <h3>Local representation</h3>
         <p>We act as your office in the other market: documentation, logistics coordination and introductions to banks, lawyers and freight partners.</p>
       </article>
     </div>
+    <article class="svc-flagship reveal">
+      <span class="tier">TIER 04 · LEAD — OUR FLAGSHIP ENGAGEMENT</span>
+      <h3>Fractional leadership &amp; Build–Operate–Transfer</h3>
+      <p>For companies ready to establish a real presence: we set up your UK entity, hire local talent, handle governance and reporting, and run day-to-day operations as your fractional managing director — while your senior leadership stays focused on what it does best at home.</p>
+      <div class="bot-steps" aria-label="Build, operate, transfer timeline">
+        <div class="bot-step"><span class="lbl">BUILD</span><span class="dash"></span></div>
+        <div class="bot-step"><span class="lbl">OPERATE</span><span class="dash"></span></div>
+        <div class="bot-step"><span class="lbl">TRANSFER</span></div>
+      </div>
+      <p class="flag-note">A FULLY OPERATIONAL BUSINESS, HANDED TO YOUR PERMANENT LOCAL TEAM · TYPICALLY 3–5 YEARS</p>
+    </article>
   </div>
 </section>
 
