@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UK India Trade Limited | Market Entry Consultants for India–UK Trade</title>
-<meta name="description" content="We help Indian companies enter the UK market and UK companies enter India. Market entry consulting, buyer matchmaking and FTA guidance. Get a free market snapshot.">
+<meta name="description" content="We help Indian companies enter the UK market and UK companies enter India. Market entry consulting, buyer matchmaking and FTA guidance. Request a free market assessment.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://www.ukindiatrade.co.uk/">
 <meta property="og:title" content="UK India Trade Limited | Market Entry Consultants for India–UK Trade">
-<meta property="og:description" content="Market entry consulting, trade facilitation and local representation between the UK and India. Free market snapshot for your product.">
+<meta property="og:description" content="Market entry consulting, trade facilitation and local representation between the UK and India. Free market assessment for your product.">
 <meta property="og:url" content="https://www.ukindiatrade.co.uk/">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
@@ -84,7 +85,8 @@ header{
   border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-mark{height:34px;width:auto;flex:none}
 .brand-name{font-family:'Marcellus',serif;font-size:1.15rem;color:var(--navy)}
 .brand-tag{font-family:'IBM Plex Mono',monospace;font-size:.65rem;letter-spacing:.18em;color:var(--marigold);text-transform:uppercase}
 nav ul{display:flex;gap:28px;list-style:none}
@@ -93,12 +95,19 @@ nav a:hover{color:var(--navy)}
 .cta-btn{
   display:inline-block;background:var(--navy);color:#fff;text-decoration:none;
   padding:11px 22px;border-radius:var(--radius);font-weight:600;font-size:.95rem;
+  white-space:nowrap;
   transition:background .2s ease, transform .2s ease;
 }
 .cta-btn:hover{background:var(--navy-deep);transform:translateY(-1px)}
 .cta-btn.gold{background:var(--marigold);color:#FFF4EA}
 .cta-btn.gold:hover{background:var(--marigold-soft)}
-@media(max-width:760px){nav ul{display:none}}
+@media(max-width:760px){
+  nav ul{display:none}
+  .nav .cta-btn{padding:9px 14px;font-size:.85rem}
+  .brand-name{font-size:1.02rem}
+  .brand-mark{height:28px}
+  .brand-tag{display:none}
+}
 
 /* ---------- hero ---------- */
 .hero{
@@ -216,6 +225,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 100 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="34" cy="36" r="28" fill="none" stroke="#0E4D45" stroke-width="6"/>
+        <circle cx="66" cy="36" r="28" fill="none" stroke="#B06A3B" stroke-width="6"/>
+        <path d="M 50 13.1 A 28 28 0 0 1 50 58.9 A 28 28 0 0 1 50 13.1 Z" fill="#B06A3B" opacity="0.22"/>
+      </svg>
       <span class="brand-name">UK India Trade</span>
       <span class="brand-tag">LTD</span>
     </a>
@@ -226,9 +240,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <li><a href="#process">How it works</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a class="cta-btn" href="#contact">Free market snapshot</a>
   </div>
 </header>
 
@@ -240,7 +254,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <h1>Two markets. <em>One trusted bridge.</em></h1>
     <p class="lede">We help Indian companies enter the UK market and UK companies enter India — with market entry strategy, trade facilitation and on-the-ground representation on both sides.</p>
     <div class="hero-ctas">
-      <a class="cta-btn gold" href="#contact">Get your free market snapshot</a>
+      <a class="cta-btn gold" href="#contact">Request a Free Market Assessment</a>
       <a class="ghost" href="#services">See what we do</a>
     </div>
     <div class="fta-strip reveal">
@@ -319,8 +333,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       </div>
       <div class="step reveal">
         <span class="mono">STEP 02</span>
-        <h3>Opportunity snapshot</h3>
-        <p>We reply within two working days with an honest first read: demand, competition, tariffs under the FTA, and the route we'd explore.</p>
+        <h3>Market assessment</h3>
+        <p>We reply within two working days with an honest assessment: demand, competition, tariffs under the FTA, and the route we'd explore.</p>
       </div>
       <div class="step reveal">
         <span class="mono">STEP 03</span>
@@ -342,6 +356,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <h2>Built for the biggest India–UK trade moment in a generation</h2>
     <p>UK India Trade Limited is a UK-registered trade consultancy created for one purpose: helping businesses on both sides turn the new Free Trade Agreement into real revenue.</p>
     <p>This business runs on trust and introductions. Our network of vetted lawyers, accountants and freight partners in both countries means you're never navigating alone.</p>
+    <p>And we don't just advise — we make the introductions, handle the paperwork and sit in the meetings until your business is standing on its own feet in the new market.</p>
     <div class="route" aria-hidden="true"><span>EST. 2026</span><span class="dash"></span><span>UK ⇄ IN</span></div>
   </div>
 </section>
@@ -355,7 +370,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div style="max-width:760px">
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How do I export from India to the UK?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">You'll need an Import Export Code (IEC) in India, a UK buyer or distributor, and compliance with UK product rules (UKCA marking where applicable). The India–UK Free Trade Agreement has reduced tariffs on many categories — which changes the economics significantly. Our market snapshot tells you what applies to your specific product.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">You'll need an Import Export Code (IEC) in India, a UK buyer or distributor, and compliance with UK product rules (UKCA marking where applicable). The India–UK Free Trade Agreement has reduced tariffs on many categories — which changes the economics significantly. Our market assessment tells you what applies to your specific product.</p>
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">Does my Indian company need a UK entity to sell in the UK?</summary>
@@ -363,7 +378,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How does the India–UK Free Trade Agreement help my business?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals, and eases some services and mobility rules. What it means for you depends entirely on your product's tariff line — that's the first thing we check in every market snapshot.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals, and eases some services and mobility rules. What it means for you depends entirely on your product's tariff line — that's the first thing we check in every market assessment.</p>
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How do I find distributors or buyers in the UK or India?</summary>
@@ -371,7 +386,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0;border-bottom:1px solid var(--line)">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">What does an engagement cost?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The market snapshot is free. Beyond that, we work on fixed-fee projects for market entry work and monthly retainers for ongoing representation — you'll always know the cost before we start. Send an enquiry and we'll scope it honestly.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The market assessment is free. Beyond that, we work on fixed-fee projects for market entry work and monthly retainers for ongoing representation — you'll always know the cost before we start. Send an enquiry and we'll scope it honestly.</p>
       </details>
     </div>
   </div>
@@ -386,16 +401,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     {"@type":"Question","name":"Does my Indian company need a UK entity to sell in the UK?","acceptedAnswer":{"@type":"Answer","text":"Not always. You can export to UK distributors or sell via marketplaces without a UK company. A UK subsidiary becomes worthwhile once you need local invoicing, VAT registration, or credibility with larger buyers."}},
     {"@type":"Question","name":"How does the India–UK Free Trade Agreement help my business?","acceptedAnswer":{"@type":"Answer","text":"The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals. The impact depends on your product's specific tariff line."}},
     {"@type":"Question","name":"How do I find distributors or buyers in the UK or India?","acceptedAnswer":{"@type":"Answer","text":"Distributors are best found through trade bodies, exhibition networks and vetted contacts, followed by warm introductions where there is a genuine fit for your product and price point."}},
-    {"@type":"Question","name":"What does a market entry engagement cost?","acceptedAnswer":{"@type":"Answer","text":"UK India Trade Limited offers a free market snapshot, fixed-fee projects for market entry work, and monthly retainers for ongoing representation."}}
+    {"@type":"Question","name":"What does a market entry engagement cost?","acceptedAnswer":{"@type":"Answer","text":"UK India Trade Limited offers a free market assessment, fixed-fee projects for market entry work, and monthly retainers for ongoing representation."}}
   ]
 }
 </script>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="eyebrow">Free market snapshot</span>
+    <span class="eyebrow">Free Market Assessment</span>
     <h2>Find out if your opportunity is real — before you spend a rupee or a pound</h2>
-    <p>Tell us about your product in two minutes. Within two working days you'll get an honest, no-obligation read on demand, competition and your FTA tariff advantage — by email, no sales call.</p>
+    <p>Tell us about your product in two minutes. Within two working days you'll receive an honest, no-obligation market assessment covering demand, competition and your FTA tariff advantage — by email, no sales call.</p>
     <form id="enquiry" class="enq-form" novalidate>
       <div class="enq-row">
         <div class="enq-field">
@@ -425,7 +440,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <label for="f-message">Tell us about your product and goals</label>
         <textarea id="f-message" name="message" rows="5" required></textarea>
       </div>
-      <button type="submit" class="cta-btn gold">Get my free snapshot</button>
+      <button type="submit" class="cta-btn gold">Request My Assessment</button>
       <p class="enq-note">Opens a ready-made email in your mail app — just press send. No spam, no obligation, reply within 2 working days.</p>
     </form>
     <span class="mono">UK INDIA TRADE LIMITED · REGISTERED IN ENGLAND &amp; WALES · COMPANY NO. 17342484</span>
