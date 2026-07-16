@@ -114,11 +114,12 @@ nav a:hover{color:var(--navy)}
   background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);
   color:#fff;padding:84px 0 72px;position:relative;overflow:hidden;
 }
-.hero h1{color:#fff;font-size:clamp(2.1rem,5.4vw,3.4rem);max-width:17ch;margin:26px 0 18px}
+.hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5.4vw,3.4rem);max-width:22ch;margin:26px auto 18px}
 .hero h1 em{font-style:normal;color:var(--marigold)}
-.hero p.lede{font-size:1.12rem;color:#CFE0DB;max-width:52ch;margin-bottom:34px}
-.hero .route{color:var(--marigold);max-width:420px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero p.lede{font-size:1.12rem;color:#CFE0DB;max-width:52ch;margin:0 auto 34px}
+.hero .route{color:var(--marigold);max-width:420px;width:100%}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 .hero .ghost{
   display:inline-block;padding:11px 22px;border:1px solid rgba(255,255,255,.35);
   border-radius:var(--radius);color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;
@@ -126,9 +127,9 @@ nav a:hover{color:var(--navy)}
 }
 .hero .ghost:hover{border-color:var(--marigold)}
 .fta-strip{
-  margin-top:52px;padding:16px 20px;border:1px solid rgba(176,106,59,.45);
+  margin:52px auto 0;padding:16px 20px;border:1px solid rgba(176,106,59,.45);
   border-radius:var(--radius);background:rgba(176,106,59,.12);
-  font-size:.92rem;color:#ECE7DA;max-width:640px;
+  font-size:.92rem;color:#ECE7DA;max-width:640px;text-align:center;
 }
 .fta-strip strong{color:var(--marigold)}
 
