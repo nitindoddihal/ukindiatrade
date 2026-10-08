@@ -563,6 +563,8 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 // Paste your Formspree form ID between the quotes (e.g. 'xyzabcde').
 // While empty, the form falls back to opening an email.
 const FORMSPREE_ID = 'xjygwayd';
+// Google Sheet logger (Apps Script web app URL). Leave empty to switch off.
+const SHEET_URL = '';
 
 document.getElementById('enquiry').addEventListener('submit', async function(ev){
   ev.preventDefault();
@@ -580,6 +582,10 @@ document.getElementById('enquiry').addEventListener('submit', async function(ev)
     const btn = document.getElementById('enq-btn');
     btn.disabled = true; btn.textContent = 'Sending...';
     const data = new FormData(this);
+    if(SHEET_URL){
+      // Copy to the enquiries sheet. Fire and forget, never blocks the email.
+      fetch(SHEET_URL, {method:'POST', mode:'no-cors', body:new URLSearchParams(data)}).catch(()=>{});
+    }
     data.append('_subject', subject);
     try{
       const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
