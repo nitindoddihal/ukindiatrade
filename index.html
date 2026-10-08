@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UK India Trade Limited | Market Entry Consultants for India–UK Trade</title>
+<title>UK India Trade Limited | Market Entry Consultants for India-UK Trade</title>
 <meta name="description" content="We help Indian companies enter the UK market and UK companies enter India. Market entry consulting, buyer matchmaking and FTA guidance. Request a free market assessment.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="author" content="Nitin Doddihal">
 <link rel="canonical" href="https://www.ukindiatrade.co.uk/">
-<meta property="og:title" content="UK India Trade Limited | Market Entry Consultants for India–UK Trade">
+<meta property="og:title" content="UK India Trade Limited | Market Entry Consultants for India-UK Trade">
 <meta property="og:description" content="Market entry consulting, trade facilitation and local representation between the UK and India. Free market assessment for your product.">
 <meta property="og:url" content="https://www.ukindiatrade.co.uk/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://www.ukindiatrade.co.uk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,7 +25,19 @@
   "email": "hello@ukindiatrade.co.uk",
   "description": "Market entry consulting, trade facilitation and local representation for Indian companies entering the UK and UK companies entering India.",
   "areaServed": ["GB", "IN"],
-  "knowsAbout": ["UK India Free Trade Agreement", "market entry strategy", "export consulting", "trade facilitation", "fractional executive leadership", "build operate transfer"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "42 Cockney Hill, Tilehurst",
+    "addressLocality": "Reading",
+    "postalCode": "RG30 4EU",
+    "addressCountry": "GB"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Nitin Doddihal",
+    "url": "https://doddihal.com/"
+  },
+  "knowsAbout": ["India-UK CETA", "UK India Free Trade Agreement", "market entry strategy", "export consulting", "trade facilitation", "fractional executive leadership", "build operate transfer"],
   "identifier": {
     "@type": "PropertyValue",
     "name": "Companies House Number",
@@ -152,7 +169,7 @@ nav a:hover{color:var(--navy)}
 .dir-card p{color:var(--ink-soft);font-size:.98rem;margin-bottom:18px}
 .dir-card ul{list-style:none}
 .dir-card li{padding:8px 0 8px 26px;position:relative;font-size:.95rem;border-top:1px solid var(--mist)}
-.dir-card li::before{content:'—';position:absolute;left:0;color:var(--marigold);font-weight:700}
+.dir-card li::before{content:'';position:absolute;left:0;top:20px;width:12px;height:2px;background:var(--marigold)}
 
 /* ---------- services ---------- */
 .services{padding:76px 0;background:var(--mist)}
@@ -206,6 +223,18 @@ nav a:hover{color:var(--navy)}
 .about p{color:#CFE0DB;max-width:58ch;margin-bottom:14px}
 .about .route{color:var(--marigold);max-width:360px;margin-top:30px}
 
+/* ---------- founder ---------- */
+.founder{padding:76px 0;background:var(--mist)}
+.founder .wrap{max-width:var(--maxw)}
+.founder-body{max-width:760px}
+.founder h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin-bottom:6px}
+.founder .role{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.16em;color:var(--marigold);text-transform:uppercase;display:block;margin-bottom:20px}
+.founder p{color:var(--ink-soft);max-width:62ch;margin-bottom:14px}
+.creds{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.creds li{font-size:.85rem;font-weight:500;color:var(--navy);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.founder-links{display:flex;gap:20px;flex-wrap:wrap}
+.founder-links a{color:var(--navy);font-weight:600;text-decoration:none;border-bottom:2px solid var(--marigold);font-size:.95rem}
+
 /* ---------- contact ---------- */
 .contact{padding:80px 0;text-align:center}
 .contact h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:14px}
@@ -229,10 +258,14 @@ nav a:hover{color:var(--navy)}
 .enq-field input.err,.enq-field textarea.err{border-color:#B0483B}
 .enq-form .cta-btn{border:0;cursor:pointer;font:inherit;font-weight:600;width:100%}
 .enq-note{font-size:.82rem;color:var(--ink-soft);margin-top:12px;text-align:center}
+.enq-done{margin-top:16px;padding:14px 18px;border-radius:var(--radius);background:rgba(14,77,69,.08);color:var(--navy);font-weight:600;text-align:center}
 
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--line);padding:30px 0;font-size:.85rem;color:var(--ink-soft)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer a{color:var(--navy);text-decoration:none;font-weight:500}
+footer a:hover{color:var(--marigold)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
 
 /* ---------- motion ---------- */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
@@ -264,6 +297,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <li><a href="#process">How it works</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#founder">Founder</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -276,13 +310,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <div class="route" aria-hidden="true"><span>LON</span><span class="dash"></span><span>MUM</span></div>
     <h1>Two markets. <em>One trusted bridge.</em></h1>
-    <p class="lede">We help Indian companies enter the UK market and UK companies enter India — with market entry strategy, trade facilitation and on-the-ground representation on both sides.</p>
+    <p class="lede">We help Indian companies enter the UK market and UK companies enter India. We bring market entry strategy, trade facilitation and on-the-ground representation on both sides.</p>
     <div class="hero-ctas">
       <a class="cta-btn gold" href="#contact">Request a Free Market Assessment</a>
       <a class="ghost" href="#services">See what we do</a>
     </div>
     <div class="fta-strip reveal">
-      <strong>The window is open.</strong> The India–UK Free Trade Agreement is cutting tariffs across textiles, automotive, pharma, food &amp; drink and more. First movers set the relationships that last.
+      <strong>The window is open.</strong> The India-UK trade agreement (CETA) came into force on 15 July 2026, cutting tariffs across textiles, automotive, pharma, food &amp; drink and more. First movers set the relationships that last.
     </div>
   </div>
 </section>
@@ -308,7 +342,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <article class="dir-card reveal">
         <div class="route" aria-hidden="true"><span>UK</span><span class="dash"></span><span>IND</span></div>
         <h3>UK companies entering India</h3>
-        <p>India is a market of scale — and of nuance. We help you find the right partners and avoid the expensive lessons.</p>
+        <p>India is a market of scale, and of nuance. We help you find the right partners and avoid the expensive lessons.</p>
         <ul>
           <li>India feasibility &amp; market studies</li>
           <li>Supplier sourcing &amp; verification</li>
@@ -324,18 +358,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Services</span>
-      <h2>Engage as lightly — or as deeply — as your ambition demands</h2>
+      <h2>Engage as lightly or as deeply as your ambition demands</h2>
     </div>
     <div class="svc-grid">
       <article class="svc reveal">
         <span class="tier">TIER 01 · ADVISE</span>
         <h3>Market entry consulting</h3>
-        <p>Feasibility studies, entry strategy and regulatory roadmaps — so you enter the new market with a plan, not a guess.</p>
+        <p>Feasibility studies, entry strategy and regulatory roadmaps, so you enter the new market with a plan, not a guess.</p>
       </article>
       <article class="svc reveal">
         <span class="tier">TIER 02 · CONNECT</span>
         <h3>Trade facilitation</h3>
-        <p>Buyer–supplier matchmaking, trade delegations, exhibition representation and sourcing — connections that convert.</p>
+        <p>Buyer and supplier matchmaking, trade delegations, exhibition representation and sourcing. Connections that convert.</p>
       </article>
       <article class="svc reveal">
         <span class="tier">TIER 03 · REPRESENT</span>
@@ -344,15 +378,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       </article>
     </div>
     <article class="svc-flagship reveal">
-      <span class="tier">TIER 04 · LEAD — OUR FLAGSHIP ENGAGEMENT</span>
-      <h3>Fractional leadership &amp; Build–Operate–Transfer</h3>
-      <p>For companies ready to establish a real presence: we set up your UK entity, hire local talent, handle governance and reporting, and run day-to-day operations as your fractional managing director — while your senior leadership stays focused on what it does best at home.</p>
+      <span class="tier">TIER 04 · LEAD · OUR FLAGSHIP ENGAGEMENT</span>
+      <h3>Fractional leadership &amp; Build-Operate-Transfer</h3>
+      <p>For companies ready to establish a real presence: we set up your UK entity, hire local talent, handle governance and reporting, and run day-to-day operations as your fractional managing director. Your senior leadership stays focused on what it does best at home.</p>
+      <p>Fees combine a monthly retainer with success-linked upside, so our reward is tied to your results in the new market.</p>
       <div class="bot-steps" aria-label="Build, operate, transfer timeline">
         <div class="bot-step"><span class="lbl">BUILD</span><span class="dash"></span></div>
         <div class="bot-step"><span class="lbl">OPERATE</span><span class="dash"></span></div>
         <div class="bot-step"><span class="lbl">TRANSFER</span></div>
       </div>
-      <p class="flag-note">A FULLY OPERATIONAL BUSINESS, HANDED TO YOUR PERMANENT LOCAL TEAM · TYPICALLY 3–5 YEARS</p>
+      <p class="flag-note">A FULLY OPERATIONAL BUSINESS, HANDED TO YOUR PERMANENT LOCAL TEAM · TYPICALLY 3 TO 5 YEARS</p>
     </article>
   </div>
 </section>
@@ -372,7 +407,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <div class="step reveal">
         <span class="mono">STEP 02</span>
         <h3>Market assessment</h3>
-        <p>We reply within two working days with an honest assessment: demand, competition, tariffs under the FTA, and the route we'd explore.</p>
+        <p>We reply within two working days with an honest assessment: demand, competition, tariffs under the FTA, and the route we would explore.</p>
       </div>
       <div class="step reveal">
         <span class="mono">STEP 03</span>
@@ -391,11 +426,33 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section class="about" id="about">
   <div class="wrap">
     <span class="eyebrow">About us</span>
-    <h2>Built for the biggest India–UK trade moment in a generation</h2>
-    <p>UK India Trade Limited is a UK-registered trade consultancy created for one purpose: helping businesses on both sides turn the new Free Trade Agreement into real revenue.</p>
+    <h2>Built for the biggest India-UK trade moment in a generation</h2>
+    <p>UK India Trade Limited is a UK-registered trade consultancy created for one purpose: helping businesses on both sides turn the new trade agreement into real revenue. We operate from Reading in the UK and Pune in India.</p>
     <p>This business runs on trust and introductions. Our network of vetted lawyers, accountants and freight partners in both countries means you're never navigating alone.</p>
-    <p>And we don't just advise — we make the introductions, handle the paperwork and sit in the meetings until your business is standing on its own feet in the new market.</p>
-    <div class="route" aria-hidden="true"><span>EST. 2026</span><span class="dash"></span><span>UK ⇄ IN</span></div>
+    <p>And we don't just advise. We make the introductions, handle the paperwork and sit in the meetings until your business is standing on its own feet in the new market.</p>
+    <div class="route" aria-hidden="true"><span>READING</span><span class="dash"></span><span>PUNE</span></div>
+  </div>
+</section>
+
+<section class="founder" id="founder">
+  <div class="wrap">
+    <div class="founder-body reveal">
+      <span class="eyebrow">Who you work with</span>
+      <h2>Nitin Doddihal</h2>
+      <span class="role">Founder &amp; Fractional Managing Director</span>
+      <p>Nitin has spent more than 25 years building businesses and partnerships across borders, on the commercial and business development side of telecom infrastructure.</p>
+      <p>As VP Business Development Asia at American Tower Corporation, he led growth across complex, regulated markets. He now helps Indian and UK companies enter each other's markets, and can lead a client's UK operations as their fractional MD.</p>
+      <p>Based in Reading with deep roots in Pune, he works on both sides of the corridor.</p>
+      <ul class="creds">
+        <li>25+ years in commercial leadership</li>
+        <li>Ex VP Business Development Asia, American Tower</li>
+        <li>TRIUM Global EMBA · NYU Stern, LSE, HEC Paris</li>
+        <li>FT Non-Executive Director Diploma</li>
+      </ul>
+      <div class="founder-links">
+        <a href="https://doddihal.com/" target="_blank" rel="noopener">More about Nitin at doddihal.com</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -403,28 +460,28 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Common questions</span>
-      <h2>India–UK trade, answered plainly</h2>
+      <h2>India-UK trade, answered plainly</h2>
     </div>
     <div style="max-width:760px">
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How do I export from India to the UK?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">You'll need an Import Export Code (IEC) in India, a UK buyer or distributor, and compliance with UK product rules (UKCA marking where applicable). The India–UK Free Trade Agreement has reduced tariffs on many categories — which changes the economics significantly. Our market assessment tells you what applies to your specific product.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">You'll need an Import Export Code (IEC) in India, a UK buyer or distributor, and compliance with UK product rules (UKCA marking where applicable). The India-UK trade agreement (CETA), in force since 15 July 2026, has reduced tariffs on many categories. That changes the economics significantly. Our market assessment tells you what applies to your specific product.</p>
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">Does my Indian company need a UK entity to sell in the UK?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">Not always. You can start by exporting to UK distributors or selling via marketplaces without a UK company. A UK subsidiary becomes worthwhile once you need local invoicing, VAT registration, or credibility with larger buyers — we help you judge the right moment and set it up when it comes.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">Not always. You can start by exporting to UK distributors or selling via marketplaces without a UK company. A UK subsidiary becomes worthwhile once you need local invoicing, VAT registration, or credibility with larger buyers. We help you judge the right moment and set it up when it comes.</p>
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0">
-        <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How does the India–UK Free Trade Agreement help my business?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals, and eases some services and mobility rules. What it means for you depends entirely on your product's tariff line — that's the first thing we check in every market assessment.</p>
+        <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How does the India-UK Free Trade Agreement help my business?</summary>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals, and eases some services and mobility rules. What it means for you depends entirely on your product's tariff line. That's the first thing we check in every market assessment.</p>
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">How do I find distributors or buyers in the UK or India?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">Cold lists rarely work. We identify distributors through trade bodies, exhibition networks and our own vetted contacts on both sides — then make warm introductions where there's a genuine fit for your product and price point.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">Cold lists rarely work. We identify distributors through trade bodies, exhibition networks and our own vetted contacts on both sides, then make warm introductions where there's a genuine fit for your product and price point.</p>
       </details>
       <details style="border-top:1px solid var(--line);padding:18px 0;border-bottom:1px solid var(--line)">
         <summary style="cursor:pointer;font-weight:600;color:var(--navy)">What does an engagement cost?</summary>
-        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The market assessment is free. Beyond that, we work on fixed-fee projects for market entry work and monthly retainers for ongoing representation — you'll always know the cost before we start. Send an enquiry and we'll scope it honestly.</p>
+        <p style="margin-top:10px;color:var(--ink-soft);font-size:.95rem">The market assessment is free. Beyond that, we work on fixed-fee projects for market entry work and monthly retainers for ongoing representation. Longer fractional leadership mandates add success-linked upside. You'll always know the cost before we start. Send an enquiry and we'll scope it honestly.</p>
       </details>
     </div>
   </div>
@@ -435,9 +492,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"How do I export from India to the UK?","acceptedAnswer":{"@type":"Answer","text":"You need an Import Export Code (IEC) in India, a UK buyer or distributor, and compliance with UK product rules such as UKCA marking where applicable. The India–UK Free Trade Agreement has reduced tariffs on many categories."}},
+    {"@type":"Question","name":"How do I export from India to the UK?","acceptedAnswer":{"@type":"Answer","text":"You need an Import Export Code (IEC) in India, a UK buyer or distributor, and compliance with UK product rules such as UKCA marking where applicable. The India-UK trade agreement (CETA), in force since 15 July 2026, has reduced tariffs on many categories."}},
     {"@type":"Question","name":"Does my Indian company need a UK entity to sell in the UK?","acceptedAnswer":{"@type":"Answer","text":"Not always. You can export to UK distributors or sell via marketplaces without a UK company. A UK subsidiary becomes worthwhile once you need local invoicing, VAT registration, or credibility with larger buyers."}},
-    {"@type":"Question","name":"How does the India–UK Free Trade Agreement help my business?","acceptedAnswer":{"@type":"Answer","text":"The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals. The impact depends on your product's specific tariff line."}},
+    {"@type":"Question","name":"How does the India-UK Free Trade Agreement help my business?","acceptedAnswer":{"@type":"Answer","text":"The FTA cuts or removes tariffs across sectors including textiles, food and drink, automotive components and pharmaceuticals. The impact depends on your product's specific tariff line."}},
     {"@type":"Question","name":"How do I find distributors or buyers in the UK or India?","acceptedAnswer":{"@type":"Answer","text":"Distributors are best found through trade bodies, exhibition networks and vetted contacts, followed by warm introductions where there is a genuine fit for your product and price point."}},
     {"@type":"Question","name":"What does a market entry engagement cost?","acceptedAnswer":{"@type":"Answer","text":"UK India Trade Limited offers a free market assessment, fixed-fee projects for market entry work, and monthly retainers for ongoing representation."}}
   ]
@@ -447,8 +504,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section class="contact" id="contact">
   <div class="wrap">
     <span class="eyebrow">Free Market Assessment</span>
-    <h2>Find out if your opportunity is real — before you spend a rupee or a pound</h2>
-    <p>Tell us about your product in two minutes. Within two working days you'll receive an honest, no-obligation market assessment covering demand, competition and your FTA tariff advantage — by email, no sales call.</p>
+    <h2>Find out if your opportunity is real, before you spend a rupee or a pound</h2>
+    <p>Tell us about your product in two minutes. Within two working days you'll receive an honest, no-obligation market assessment covering demand, competition and your FTA tariff advantage. By email, no sales call.</p>
     <form id="enquiry" class="enq-form" novalidate>
       <div class="enq-row">
         <div class="enq-field">
@@ -478,10 +535,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <label for="f-message">Tell us about your product and goals</label>
         <textarea id="f-message" name="message" rows="5" required></textarea>
       </div>
-      <button type="submit" class="cta-btn gold">Request My Assessment</button>
-      <p class="enq-note">Opens a ready-made email in your mail app — just press send. No spam, no obligation, reply within 2 working days.</p>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+      <button type="submit" class="cta-btn gold" id="enq-btn">Request My Assessment</button>
+      <p class="enq-note" id="enq-note">No spam, no obligation. We reply within 2 working days.</p>
+      <p class="enq-done" id="enq-done" hidden>Thank you. Your enquiry has been sent. We will reply within 2 working days.</p>
     </form>
-    <span class="mono">UK INDIA TRADE LIMITED · REGISTERED IN ENGLAND &amp; WALES · COMPANY NO. 17342484</span>
+    <p class="enq-note" style="max-width:none">We use your details only to reply to your enquiry. We never share or sell them.</p>
+    <span class="mono">UK INDIA TRADE LIMITED · REGISTERED IN ENGLAND &amp; WALES · COMPANY NO. 17342484<br>REGISTERED OFFICE: 42 COCKNEY HILL, TILEHURST, READING RG30 4EU</span>
   </div>
 </section>
 
@@ -489,7 +549,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 UK India Trade Limited</span>
+    <span>© 2026 UK India Trade Limited · Company No. 17342484 · 42 Cockney Hill, Tilehurst, Reading RG30 4EU</span>
+    <span class="foot-links">
+      <a href="mailto:hello@ukindiatrade.co.uk">hello@ukindiatrade.co.uk</a>
+      <a href="https://doddihal.com/" target="_blank" rel="noopener">doddihal.com</a>
+    </span>
   </div>
 </footer>
 
@@ -499,7 +563,11 @@ const obs = new IntersectionObserver((entries)=>{
 },{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-document.getElementById('enquiry').addEventListener('submit', function(ev){
+// Paste your Formspree form ID between the quotes (e.g. 'xyzabcde').
+// While empty, the form falls back to opening an email.
+const FORMSPREE_ID = '';
+
+document.getElementById('enquiry').addEventListener('submit', async function(ev){
   ev.preventDefault();
   let valid = true;
   this.querySelectorAll('[required]').forEach(f=>{
@@ -509,7 +577,29 @@ document.getElementById('enquiry').addEventListener('submit', function(ev){
   });
   if(!valid) return;
   const v = id => document.getElementById(id).value.trim();
-  const subject = 'Enquiry from ' + v('f-company') + ' — ' + v('f-direction');
+  const subject = 'Enquiry from ' + v('f-company') + ' | ' + v('f-direction');
+
+  if(FORMSPREE_ID){
+    const btn = document.getElementById('enq-btn');
+    btn.disabled = true; btn.textContent = 'Sending...';
+    const data = new FormData(this);
+    data.append('_subject', subject);
+    try{
+      const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+        method:'POST', body:data, headers:{'Accept':'application/json'}
+      });
+      if(!res.ok) throw new Error('send failed');
+      this.reset();
+      document.getElementById('enq-done').hidden = false;
+      document.getElementById('enq-note').hidden = true;
+      btn.textContent = 'Sent';
+    }catch(err){
+      btn.disabled = false; btn.textContent = 'Request My Assessment';
+      alert('Sorry, something went wrong. Please email hello@ukindiatrade.co.uk directly.');
+    }
+    return;
+  }
+
   const body =
     'Name: ' + v('f-name') + '\n' +
     'Company: ' + v('f-company') + '\n' +
